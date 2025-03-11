@@ -1,0 +1,19 @@
+CRUD Operations: To simulate CRUD operations, we'll implement functions for Create, Read, Update, and Delete for both products and users.
+
+
+const addProduct = () => {
+  const newProduct = {
+    title: 'New Product',
+    price: 20.99,
+    description: 'This is a new product.',
+    image: 'https://example.com/new-product.jpg',
+  };
+
+  axios.post('https://fakestoreapi.com/products', newProduct)
+    .then(response => {
+      setProducts([...products, response.data]);
+    })
+    .catch(error => {
+      console.error('Error adding product:', error);
+    });
+};
