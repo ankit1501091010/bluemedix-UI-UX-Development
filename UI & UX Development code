@@ -1,14 +1,14 @@
-Initialize the React App:
+# Initialize the React App:
 
 npx create-react-app pharmacy-dashboard
 cd pharmacy-dashboard
 npm start
 
 
-Install Dependencies:
+# Install Dependencies:
 npm install react-router-dom axios
 
-App.js:
+# App.js:
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
@@ -34,10 +34,10 @@ function App() {
   );
 }
 
-export default App;
+# export default App;
 
 
-Sidebar.js:
+# Sidebar.js:
 
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -58,7 +58,7 @@ const Sidebar = () => {
 export default Sidebar;
 
 
-App.css:
+# App.css:
 .dashboard {
   display: flex;
 }
@@ -114,7 +114,7 @@ App.css:
 }
 
 
-Products.js:
+# Products.js:
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Products.css';
@@ -150,10 +150,10 @@ const Products = () => {
   );
 };
 
-export default Products;
+# export default Products;
 
 
-Users.js:
+# Users.js:
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Users.css';
@@ -189,10 +189,10 @@ const Users = () => {
   );
 };
 
-export default Users;
+# export default Users;
 
 
-Products.css:
+# Products.css:
 .products-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -215,7 +215,7 @@ Products.css:
 }
 
 
-Users.css:
+# Users.css:
 .users-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
