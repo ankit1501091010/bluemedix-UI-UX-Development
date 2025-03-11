@@ -1,4 +1,4 @@
-CRUD Operations: To simulate CRUD operations, we'll implement functions for Create, Read, Update, and Delete for both products and users.
+# CRUD Operations: To simulate CRUD operations, we'll implement functions for Create, Read, Update, and Delete for both products and users.
 
 
 const addProduct = () => {
